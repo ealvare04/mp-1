@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    width: 80vw;
+    margin: auto;
+
+    border: 2px solid green;
+}
+
+#nav-main {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    width: 30%;
+
+    border: 2px solid blue;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+
+}
+
+nav a {
+
+}
+
+main {
+    width: 70%;
+
+    border: 2px solid red;
+}
