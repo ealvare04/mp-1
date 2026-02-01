@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculator | Edison's Resume</title>
-</head>
-<body>
-<div id="page-wrapper">
-  <header>
-    <h1>Edison's Resume</h1>
-    <p>An online website showcasing Edison's career</p>
-  </header>
-  <div id="nav-main">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="experiences.html">Experiences</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="organizations.html">Organizations</a></li>
-      </ul>
-    </nav>
-    <main>
-        <h2>Calculator</h2>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator | Edison's Resume</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+    </head>
+    <body>
+        <div id="page-wrapper">
+          <header>
+              <h1>Edison's Resume</h1>
+              <p>An online website showcasing Edison's career</p>
+          </header>
+          <div id="nav-main">
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="organizations.html">Organizations</a></li>
+              </ul>
+            </nav>
+            <main>
+                <h2>Calculator</h2>
 
-        <label for="first">First Number: </label>
-        <input type="text" id="first">
-        <label for="second">Second Number: </label>
-        <input type="text" id="second">
+                <label for="first">First Number: </label>
+                <input type="text" id="first">
+                <label for="second">Second Number: </label>
+                <input type="text" id="second">
 
-        <button onclick="doAddition()"> + </button>
-        <button onclick="doSubtraction()"> - </button>
-        <button onclick="doMultiplication()"> * </button>
-        <button onclick="doDivision()"> / </button>
-        <button onclick="doPower()">^</button>
-        <button onclick="doClear()">C</button>
+                <button onclick="doAddition()"> + </button>
+                <button onclick="doSubtraction()"> - </button>
+                <button onclick="doMultiplication()"> * </button>
+                <button onclick="doDivision()"> / </button>
+                <button onclick="doPower()">^</button>
+                <button onclick="doClear()">C</button>
 
-        <h4 id="output"></h4>
+                <h4 id="output"></h4>
 
-    </main>
-  </div>
-  <footer>
-    <p>All rights reserved by Edison Alvarez <a href="credits.html">Credits</a> &#169;</p>
-  </footer>
-</div>
-<script src="calculator.js"></script>
-</body>
+            </main>
+          </div>
+          <footer>
+            <p>All rights reserved by Edison Alvarez <a href="credits.html">Credits</a> &#169;</p>
+          </footer>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
 </html>
