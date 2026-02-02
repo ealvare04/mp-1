@@ -73,8 +73,8 @@ nav a:hover {
 main {
     width: 70%;
 
-    background-color: #EAEFEF;
 
+    background-color: #EAEFEF;
 
     margin: auto;
     text-align: center;
@@ -83,6 +83,15 @@ main {
 main img {
     border: 6px solid #25343F;
 
+}
+
+main ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+main li {
+    padding: 5%;
 }
 
 main p {

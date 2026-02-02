@@ -73,16 +73,30 @@ nav a:hover {
 main {
     width: 70%;
 
-    background-color: #EAEFEF;
 
+    background-color: #EAEFEF;
 
     margin: auto;
     text-align: center;
 }
 
+main h2 {
+    padding: 3%;
+    text-decoration: underline;
+}
+
 main img {
     border: 6px solid #25343F;
 
+}
+
+main ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+main li {
+    padding: 5%;
 }
 
 main p {
