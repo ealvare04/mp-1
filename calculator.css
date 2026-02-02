@@ -1,13 +1,22 @@
 * {
     margin: 0;
     box-sizing: border-box;
+
+
 }
 
 #page-wrapper {
     width: 80vw;
+
     margin: auto;
 
-    border: 2px solid purple;
+    font-family: Georgia, serif;
+    font-size: calc(2px + 2vh);
+}
+
+header, footer {
+    background-color: #BFC9D1;
+    padding: 1%;
 }
 
 #nav-main {
@@ -18,35 +27,84 @@
 nav {
     width: 30%;
 
-    border: 2px solid blue;
+    border: 2px solid #25343F;
+    background-color: #FF9B51;
+
 }
 
 nav ul {
+    height: 70%;
+
     list-style: none;
     padding-left: 0;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 nav li {
+    margin: auto;
+    text-align: center;
 
 }
 
 nav a {
+    width: 100%;
+    background-color: #EAEFEF;
+    padding: 7%;
+
+    border: 2px solid #25343F;
+    border-radius: 45%;
+
+    text-decoration: none;
+    color: #25343F;
+
+}
+
+/* pseudo-class, activates when element is being hovered over by the mouse */
+nav a:hover {
+    background-color: #25343F;
+    color: #EAEFEF;
 
 }
 
 main {
     width: 70%;
 
-    border: 2px solid red;
+    background-color: #EAEFEF;
+
+
+    margin: auto;
+    text-align: center;
+}
+
+main img {
+    border: 6px solid #25343F;
+
+}
+
+main p {
+    width: 75%;
+
+    margin: 5% auto;
+    text-align: center;
+
+    padding: 1%;
+}
+
+footer {
+
 }
 
 /* for screens smaller than 750px */
 @media screen and (max-width: 749px) {
+
+    #page-wrapper {
+        font-size: calc(2px + 1vh);
+
+    }
 
     /* return to single column layout for #nav-main */
     main,
@@ -58,4 +116,13 @@ main {
         flex-direction: column;
     }
 
+    nav ul{
+        flex-direction: row;
+    }
+
+    nav li {
+        padding: 1%;
+
+        border-radius: 0;
+    }
 }
