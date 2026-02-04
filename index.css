@@ -33,48 +33,109 @@ nav {
 }
 
 nav ul {
-    height: 70%;
+    height: 75vh;
 
     list-style: none;
     padding-left: 0;
 
     display: flex;
     flex-direction: column;
+
     justify-content: space-evenly;
+    align-items: center;
 
 }
 
 nav li {
-    margin: auto;
-    text-align: center;
-
+    background-color: white;
+    padding: 5%;
 }
 
 nav a {
-    width: 100%;
-    background-color: #EAEFEF;
-    padding: 7%;
-
-    border: 2px solid #25343F;
-    border-radius: 45%;
-
+    color: black;
     text-decoration: none;
-    color: #25343F;
 
 }
 
-/* pseudo-class, activates when element is being hovered over by the mouse */
+/* pseudo-class selector, activate when element is being hovered over by the mouse */
 nav a:hover {
     background-color: #25343F;
     color: #EAEFEF;
-
 }
+
+/* calculator */
+#calculator {
+    margin: 5%;
+    padding: 5%;
+
+    border: 7px solid grey;
+    background-color: lightgray;
+
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#calculator h2 {
+    margin-bottom: 2%;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+input {
+    text-align: center;
+}
+
+#buttons {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 5%;
+}
+
+#buttons1, #buttons2 {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    margin: 1%;
+    padding: 5%;
+
+    font-size: calc(10px + 1vh);
+}
+
+#output {
+    width: 60%;
+
+    margin: auto;
+
+    padding: 5%;
+
+    background-color: white;
+    border: 7px solid darkgrey;
+}
+
 
 main {
     width: 70%;
 
 
     background-color: #EAEFEF;
+    padding: 5%;
 
     margin: auto;
     text-align: center;
@@ -120,6 +181,29 @@ footer {
 
     }
 
+    /* calculator stuff */
+    #inputs {
+        flex-direction: column;
+    }
+
+    input {
+        width: 50%;
+
+        margin: auto;
+    }
+
+    #buttons {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    #buttons1, #buttons2 {
+        flex-direction: column;
+    }
+
+
+
     /* return to single column layout for #nav-main */
     main,
     nav {
@@ -130,13 +214,20 @@ footer {
         flex-direction: column;
     }
 
+    nav {
+        height: 7vh;
+
+        border: 2px solid red;
+    }
+
     nav ul{
+        height: 100%;
+
         flex-direction: row;
     }
 
     nav li {
         padding: 1%;
 
-        border-radius: 0;
     }
 }

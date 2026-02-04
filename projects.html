@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Edison's Resume</title>
-    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
   </head>
   <body>
@@ -25,6 +26,32 @@
       </nav>
       <main>
         <h2>Projects</h2>
+
+        <div id="calculator">
+          <h2>JavaScript Calculator</h2>
+
+          <div id="inputs">
+            <label for="first">First Number: </label>
+            <input type="text" id="first">
+            <label for="second">Second Number: </label>
+            <input type="text" id="second">
+          </div>
+
+          <div id="buttons">
+            <div id="buttons1">
+              <button onclick="doAddition()"> + </button>
+              <button onclick="doSubtraction()"> - </button>
+              <button onclick="doMultiplication()"> * </button>
+            </div>
+            <div id="buttons2">
+              <button onclick="doDivision()"> / </button>
+              <button onclick="doPower()">^</button>
+              <button onclick="doClear()">C</button>
+            </div>
+          </div>
+
+          <h4 id="output"></h4>
+        </div>
 
         <h3>
           Rusty Game |
@@ -61,18 +88,12 @@
           A web application that uses a currency rate API to convert a currency's value to another.
           Features account creation and password hashing. Worked in a 3-person team, focused on unit testing.
         </p>
-
-        <h3>
-          JavaScript Calculator |
-          <a href="/calculator.html">Check it out!</a>
-        </h3>
-        <p>A built-in calculator in my online resume.</p>
-
       </main>
     </div>
     <footer>
-      <p>All rights reserved by Edison Alvarez <a href="credits.html">Credits</a> &#169;</p>
+      <p>All rights reserved by Edison Alvarez <a href="">Credits</a> &#169;</p>
     </footer>
     </div>
+  <script src="calculator.js"></script>
   </body>
 </html>
