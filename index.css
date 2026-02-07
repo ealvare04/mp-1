@@ -96,7 +96,7 @@ main li {
 }
 
 main p {
-    width: 50%;
+    width: 85%;
 
     margin: 5% auto;
     text-align: center;
@@ -201,9 +201,6 @@ button {
     nav ul {
         width: 80%;
     }
-    main p {
-        width: 80%;
-    }
     #img-p{
         flex-direction: column;
     }
@@ -236,11 +233,9 @@ button {
     #nav-main {
         flex-direction: column;
     }
-
     nav {
         padding: 3%;
     }
-
     nav ul{
         height: 100%;
         width: 100%;
