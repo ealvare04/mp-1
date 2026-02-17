@@ -24,6 +24,10 @@ header, footer {
     padding: 3%;
 }
 
+header {
+    text-align: left;
+}
+
 #nav-main {
     display: flex;
     flex-direction: row;
@@ -222,6 +226,10 @@ button {
     #page-wrapper {
         font-size: calc(2px + 1vh);
     }
+    header {
+        text-align: center;
+    }
+
     header, footer {
         padding: 5%;
     }
